@@ -22,14 +22,14 @@ export default deployScript(
      * Student TODO:
      * - Put the address you're using in the frontend here (leave "" to default to the deployer)
      */
-    const FRONTEND_ADDRESS = "";
+    const FRONTEND_ADDRESS = "0x8D29A38ACF4c6677e157BE67428a0f05a0D71614";
 
     /**
      * Mode switch:
      * - If true: deploy Vendor and seed it with the token balance
      * - If false: send tokens to your frontend address (or deployer if unset)
      */
-    const SEND_TOKENS_TO_VENDOR = false; // Don't switch until Checkpoint 2!
+    const SEND_TOKENS_TO_VENDOR = true; // Don't switch until Checkpoint 2!
 
     const recipientAddress =
       FRONTEND_ADDRESS && FRONTEND_ADDRESS.trim().length > 0 ? (FRONTEND_ADDRESS as `0x${string}`) : deployer;

@@ -70,7 +70,7 @@ export default defineConfig({
     },
     sepolia: {
       type: "http",
-      url: `https://eth-sepolia.g.alchemy.com/v2/${providerApiKey}`,
+      url: process.env.SEPOLIA_RPC_URL || "https://ethereum-sepolia-rpc.publicnode.com",
       accounts: [deployerPrivateKey],
     },
     optimism: {
